@@ -62,8 +62,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-
-// todo : add pdf view display exception cases
-// todo : add pdf view center
-// todo : test in different versions    11,12,13
