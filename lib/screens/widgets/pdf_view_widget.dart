@@ -22,8 +22,9 @@ class PdfView extends StatelessWidget {
           color: Colors.white,
         ),
         child: SfPdfViewer.network(
-          initialZoomLevel: 1.2,
+          initialZoomLevel: 1.01,
           'https://paytym.net/storage/pdfs/EMP18_PS_22-09-2023.pdf',
+
         ),
       ),
     );

@@ -17,8 +17,9 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
+          const SizedBox(height: 30),
           const PdfView(),
-          const SizedBox(height: 40),
+          const SizedBox(height: 50),
           Row(
             children: [
               const SizedBox(width: 20),
@@ -30,6 +31,8 @@ class HomeScreen extends StatelessWidget {
                 child: const Icon(
                   Icons.share,
                   color: Colors.white,
+                  size: 40,
+
                 ),
                 onPressed: () {
                   pdfProvider.sharePDF();
@@ -44,6 +47,7 @@ class HomeScreen extends StatelessWidget {
                 child: const Icon(
                   Icons.download,
                   color: Colors.white,
+                  size: 40,
                 ),
                 onPressed: () {
                   pdfProvider.createFileOfPdfUrl();
@@ -52,7 +56,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(width: 20),
             ],
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 70),
         ],
       ),
     );
@@ -62,3 +66,4 @@ class HomeScreen extends StatelessWidget {
 
 // todo : add pdf view display exception cases
 // todo : add pdf view center
+// todo : test in different versions    11,12,13
